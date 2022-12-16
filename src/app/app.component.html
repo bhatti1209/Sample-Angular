@@ -1,0 +1,9 @@
+<h1>{{ title }}</h1>
+
+<input [autofocus]="true" type="text" #newItem />
+<!-- or -->
+<!-- <input type="text" #newItem />
+{{ newItem.focus() }} -->
+
+<h1></h1>
+<button (click)="myFunc(newItem.value)">Next</button>
